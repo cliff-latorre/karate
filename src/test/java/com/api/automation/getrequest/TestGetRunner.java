@@ -11,6 +11,7 @@ public class TestGetRunner {
 
     @Test
     public Karate runTestUsingCassPath() {
-        return Karate.run("classpath:com/api/automation/getrequest");
+        //return Karate.run("classpath:com/api/automation/getrequest");
+        return Karate.run("classpath:com/api/automation");
     }
 }
