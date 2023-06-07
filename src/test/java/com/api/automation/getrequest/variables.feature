@@ -39,3 +39,5 @@ Feature: Variables Creation in Karate Framework
     Given print "Previous Scenario ==>", var_int
     And print "Previous Scenario ==>", var_string
     And print "Previous Scenario ==>", var_int_2
+
+
