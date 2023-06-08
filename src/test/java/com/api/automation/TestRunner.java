@@ -1,12 +1,13 @@
-package com.api.automation.getrequest;
+package com.api.automation;
 
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;
 
-public class TestGetRunner {
+public class TestRunner {
 //    @Test
 //    public  void runTest() {
 //        Karate.run("getRequest").relativeTo(getClass());
+//        Karate.run("fuzzyMatcher").relativeTo(getClass());
 //    }
 
     @Test
