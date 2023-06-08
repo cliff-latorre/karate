@@ -22,9 +22,9 @@ Feature: To validate the GET End point
     And match response.data == '#array'
     #complex Fuzzy matcher
     And match response.data[0].id == '#? _ <= 7'
-    And match response.data[0].first_name == '#string? _.length >=1'
+    And match response.data[0].first_name == '#string? _ .length >=1'
     #To validate the array
     And match response.data == '#[]'
     And match response.data == '#[6]'
-    #validamos que el campo first_name sea de tipo string y que su longitud sea mayor o igual a 15 y que además lo hallemos 6 veces
-    And match response.data[*].first_name == '#[6] #string? _.length >=5'
+    #validamos que el campo first_name sea de tipo string y que su longitud sea mayor o igual a 5 y que además lo hallemos 6 veces
+    And match response.data[*].first_name == '#[6] #string? _ .length >=5'

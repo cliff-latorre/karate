@@ -142,7 +142,7 @@ Feature: To validate the GET End point
     When method get
     Then status 200
     And print response
-    And match response contains deep {"per_page": 6}
+    And match response contains {"per_page": 6}
     And match response contains deep {"data": [{"avatar": "https://reqres.in/img/faces/7-image.jpg"}]}
     And match header Content-Type == 'application/json; charset=utf-8'
     And match header Connection == 'keep-alive'
