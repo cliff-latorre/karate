@@ -1,5 +1,3 @@
-package com.api.automation;
-
 import com.intuit.karate.junit5.Karate;
 import com.intuit.karate.junit5.Karate.Test;
 
@@ -10,9 +8,12 @@ public class TestRunner {
 //        Karate.run("fuzzyMatcher").relativeTo(getClass());
 //    }
 
-    @Test
-    public Karate runTestUsingCassPath() {
+    @Karate.Test
+    public Karate runTestUsingClassPath() {
         //return Karate.run("classpath:com/api/automation/getrequest");
-        return Karate.run("classpath:com/api/automation");
+        return Karate.run("classpath:com/api/automation")
+                .outputCucumberJson(true)
+                .outputJunitXml(true)
+                .tags("~@smoke");
     }
 }

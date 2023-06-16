@@ -1,3 +1,4 @@
+@smoke
 Feature: To validate the GET End point
   To validate the get end point response
 
