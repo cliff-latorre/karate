@@ -20,3 +20,7 @@ ruta del wordir en  jenkins
 
 /var/jenkins_home/workspace
 docker exec -it ad6429acfd91 bin/bash
+
+
+
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions
