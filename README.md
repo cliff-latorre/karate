@@ -2,6 +2,9 @@
 mvn test -Dkarate.options='-t=@wip'
 mvn test -Dkarate.options='-t=@config' -Dkarate.env='dev'
 
+
+mvn test "-Dkarate.options=--tags @fast"
+
 https://karatelabs.github.io/karate/#index
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions
 
@@ -24,3 +27,8 @@ docker exec -it ad6429acfd91 bin/bash
 
 
 https://www.w3schools.com/js/tryit.asp?filename=tryjs_functions
+
+
+
+
+fin

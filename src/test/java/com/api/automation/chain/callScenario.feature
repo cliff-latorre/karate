@@ -10,6 +10,6 @@ Feature: LLamamos a otro Escenario
 
 
   Scenario: Llamamos a un escenario con parámetros
-    * def response_create = call read("../chain/createUserWithParameters.feature") {name: 'morpheus', job: 'leader'}
+    * def response_create = call read("../chain/createUserWithParameters.feature") {name: 'morpheus', job: 'leader1'}
     And print "recuperado desde callScenario==> ", response_create
     And print response_create.response.id

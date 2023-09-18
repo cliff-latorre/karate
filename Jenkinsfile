@@ -17,7 +17,7 @@ pipeline{
             steps {
                //define the single or multiple step
                 sh 'echo Git Checkout'
-                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/cliff-latorre/karate.git']]])
+                checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/cliff-latorre/KarateTaller.git']]])
             }
 
         }
